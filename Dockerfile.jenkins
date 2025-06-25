@@ -12,10 +12,14 @@ RUN apt-get update && apt-get install -y \
     unzip \
     && apt-get clean
 
-# "Optional: Install Git if Jenkins uses Git pipelines
-RUN apt-get install -y git
+# Add the jenkins user to the docker group to grant permission to run Docker
+RUN groupadd -f docker && usermod -aG docker jenkins
 
 # Create a directory to mount the source code if needed
 RUN mkdir -p /jenkins_docker_cicd && chmod -R 777 /jenkins_docker_cicd
+
+# Install plugins from plugin_jenkins.txt
+COPY plugin_jenkins.txt /usr/share/jenkins/ref/plugins.txt
+RUN jenkins-plugin-cli --plugin-file /usr/share/jenkins/ref/plugins.txt
 
 USER jenkins

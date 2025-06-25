@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    triggers {
+        pollSCM('H/5 * * * *')  // Check SCM every 5 minutes
+    }
+
     environment {
         jobName = "${JOB_BASE_NAME}-${BUILD_NUMBER}"
         buildImage = "image:${jobName}"
