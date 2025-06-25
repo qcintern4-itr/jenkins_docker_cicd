@@ -18,11 +18,6 @@ COPY . /jenkins_docker_cicd
 
 RUN ls -la /jenkins_docker_cicd/tmp
 
-# Đúng tên file:
-RUN chmod +x /jenkins_docker_cicd/tmp/chromedriver.exe
-
-# Thêm vào PATH nếu bạn dùng .exe:
-ENV PATH="/jenkins_docker_cicd/tmp:${PATH}"
 
 # Cấp quyền
 RUN chmod -R 777 /jenkins_docker_cicd
