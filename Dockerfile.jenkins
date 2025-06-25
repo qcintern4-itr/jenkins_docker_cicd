@@ -16,6 +16,6 @@ RUN apt-get update && apt-get install -y \
 RUN apt-get install -y git
 
 # Tạo thư mục để mount source code nếu cần
-RUN mkdir -p /btcy-qa-tool-auto_fwk && chmod -R 777 /btcy-qa-tool-auto_fwk
+RUN mkdir -p /jenkins_docker_cicd && chmod -R 777 /jenkins_docker_cicd
 
 USER jenkins
