@@ -1,5 +1,9 @@
 pipeline {
     agent any
+
+    triggers {
+        pollSCM('H/5 * * * *') 
+    }
     environment{
         jobName="$JOB_BASE_NAME-$BUILD_NUMBER"
         buildImage="image:${jobName}"
