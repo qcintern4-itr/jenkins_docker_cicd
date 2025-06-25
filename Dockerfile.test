@@ -16,6 +16,12 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # Copy project code vào container
 COPY . /jenkins_docker_cicd
 
+# Thêm tmp folder vào PATH để hệ thống tìm được chromedriver
+ENV PATH="/jenkins_docker_cicd/tmp:${PATH}"
+
+# Cấp quyền thực thi cho chromedriver
+RUN chmod +x /jenkins_docker_cicd/tmp/chromedriver
+
 # Cấp quyền
 RUN chmod -R 777 /jenkins_docker_cicd
 
