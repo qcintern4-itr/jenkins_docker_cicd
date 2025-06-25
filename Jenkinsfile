@@ -9,15 +9,15 @@ pipeline {
         stage('Building Container') {
             steps {
             sh label: '', script: '''
-                    docker build -t ${buildImage} .;
-                    docker container run -itd --name ${jobName} ${buildImage}
+                    docker build -t ${buildImage} -f Dockerfile.test .
+                    docker run -dit --name ${jobName} ${buildImage}
             '''
             }
         }
 
         stage('Run') {
             steps {
-                sh 'docker exec ${jobName} bash -c "export USERNAME=auto-bot; python3 run.py -s project_bioflux_callcenter_portal/test/*.robot project_bioflux_clinic_portal/test/BF-PHY-ARCHIVED-STUDY.robot --env staging --browser chrome -e manual inactive R3 --update-dashboard --report-teams test --headless"'
+                sh 'docker exec ${jobName} bash -c "export USERNAME=auto-bot; python3 run.py -s project_bioflux_callcenter_portal/test/TEST-CICD.robot --env staging --browser chrome --headless"'
             }
         }
 

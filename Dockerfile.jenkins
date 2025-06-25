@@ -1,0 +1,21 @@
+# Base image là Jenkins LTS
+FROM jenkins/jenkins:lts
+
+USER root
+
+# Cài Docker client bên trong Jenkins container để Jenkins gọi Docker host
+RUN apt-get update && apt-get install -y \
+    docker.io \
+    lsb-release \
+    curl \
+    gnupg2 \
+    unzip \
+    && apt-get clean
+
+# Tùy chọn: Cài thêm Git nếu Jenkins dùng Git pipeline
+RUN apt-get install -y git
+
+# Tạo thư mục để mount source code nếu cần
+RUN mkdir -p /btcy-qa-tool-auto_fwk && chmod -R 777 /btcy-qa-tool-auto_fwk
+
+USER jenkins

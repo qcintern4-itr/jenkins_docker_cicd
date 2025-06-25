@@ -1,0 +1,28 @@
+# Image Selenium Chrome chính chủ
+FROM selenium/standalone-chrome:latest
+
+USER root
+
+# Cài các dependency cần thiết
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    python3 \
+    python3-pip \
+    python3-setuptools \
+    libpq-dev \
+    python3-psycopg2 \
+    make \
+    && apt-get clean && rm -rf /var/lib/apt/lists/*
+
+# Copy project code vào container
+COPY . /btcy-qa-tool-auto_fwk
+
+# Cấp quyền
+RUN chmod -R 777 /btcy-qa-tool-auto_fwk
+
+WORKDIR /btcy-qa-tool-auto_fwk
+
+# Cài thư viện Python
+RUN pip3 install --no-cache-dir -r requirements_raw.txt
+
+# Healthcheck đơn giản
+HEALTHCHECK --interval=15s --timeout=5s --start-period=5s --retries=3 CMD ["echo", "healthy"]
