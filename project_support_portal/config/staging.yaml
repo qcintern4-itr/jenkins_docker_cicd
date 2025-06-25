@@ -1,0 +1,7 @@
+# Support portal
+WEB_BASE_URL: https://support2.staging.biotricity.com
+# Digitalization portal
+WEB_DIGITALIZATION_URL: https://operation.staging.biotricity.com
+USER_DIGITALIZATION:
+    username: om01
+    password: 3#Monitoring3#

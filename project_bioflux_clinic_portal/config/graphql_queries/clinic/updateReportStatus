@@ -1,0 +1,6 @@
+mutation updateReportStatus($id: ID!, $status: UpdateReportStatusInput) {
+  updateReportStatus(id: $id, status: $status) {
+    isSuccess
+    message
+  }
+}

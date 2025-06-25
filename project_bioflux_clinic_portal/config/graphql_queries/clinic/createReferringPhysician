@@ -1,0 +1,12 @@
+mutation createReferringPhysician($userInfo: UserInput!, $facility: ID!) {
+  createReferringPhysician(userInfo: $userInfo, facility: $facility) {
+    isSuccess
+    message
+    user {
+      id
+      firstName
+      lastName
+      canLogin
+    }
+  }
+}

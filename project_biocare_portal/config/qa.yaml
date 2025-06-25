@@ -1,0 +1,19 @@
+WEB_BASE_URL: https://delta.bioflux.io
+USER:
+  - name: Test Auto Phy 001 #F001 F002
+    username: test_auto_phy_001
+    password: auto_001
+  - name: Test Auto Phy 002 # F001 but deactivated
+    username: test_auto_phy_002
+    password: 2@2@test_auto_phy_002100
+  - name: Test Auto Phy 003 # F003 was closed -> Deactivated
+    username: test_auto_phy_003
+    password: 2@2@test_auto_phy_003100
+  - name: Test Auto Tech 001 #F001 F002
+    username: test_auto_001
+    password: 2@2@test_auto_001100
+#     password format: 2@2@username100
+FACILITY:
+  - Facility Test Auto 001 # Active
+  - Facility Test Auto 002 # Active
+  - Facility Test Auto 003 # Closed

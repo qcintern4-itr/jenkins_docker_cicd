@@ -1,0 +1,7 @@
+query instantReportCount($filter: InstantReportsFilterInput) {
+  instantReportCount(filter: $filter) {
+    isSuccess
+    message
+    count
+  }
+}

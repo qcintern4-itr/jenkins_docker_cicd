@@ -1,0 +1,77 @@
+WEB_BASE_URL: https://callcenter.staging.biotricity.com
+USERS:
+    callcenter_technician:
+        username: technician01
+        password: 3#Monitoring3#
+    callcenter_qa:
+        username: qa1
+        password: 3#Monitoring3#
+    callcenter_qalead:
+        username: leader1
+        password: 3#Monitoring3#
+    callcenter_supervisor:
+        username: super1
+        password: 3#Monitoring3#
+
+NEW_USERS:
+    callcenter_technician:
+        username: cct_qa_01
+        password: 3#Monitoring3#
+    callcenter_qa:
+        username: ccqa_qa_01
+        password: 3#Monitoring3#
+    callcenter_qaleader:
+        username: ccqal_qa_01
+        password: 3#Monitoring3#
+    callcenter_supervisor:
+        username: super5
+        password: 3#Monitoring3#
+    callcenter_airp:
+        username: qafetest
+        password: 3#Monitoring3#
+    sso_customer:
+        username: qc4@biotricity.com
+        password: Xow07129
+    callcenter_technician_event:
+        username: cct_qa_02
+        password: 3#Monitoring3#
+
+STUDY_ID:
+    study_id_completed:
+        study_id: '17956'
+        study_id_1: '17514'
+#        study_id_2 : '17883'
+#        study_id_2 : '17943'
+        study_id_2 : '18275'
+        study_id_3 : '17521'
+        study_id_4 : '17494'
+        study_id_5 : '17476'
+        study_id_6: '17461'
+        study_id_7: '17086'
+        study_id_8: '17125'
+        study_id_9: '17276'
+        study_id_10: '17461'
+        study_id_archived: '11914'
+        study_id_airp: '16373'
+        study_id_mct: '17126'
+        study_id_11: '17956'
+        study_id_abort: '22036'
+
+#clinic
+WEB_BASE_URL_CLINIC: https://diagnostics.staging.biotricity.com
+NEW_USER_CLINIC:
+    clinic_physician:
+        - name: Physician Qa Team 01
+          username: physician_qa_team_01
+          password: Welcomeqa1#
+        - name: Physician Qa Team 02
+          username: physician_qa_team_02
+          password: Welcomeqa1#
+          userID: 635a0afc14ba33394f6504e1
+    clinic_technician:
+        - name: Technician Qa Team 01
+          username: nurse_qa_team_01
+          password: Welcomeqa1#
+        - name: Technician Qa Team 02
+          username: nurse_qa_team_02
+          password: Welcomeqa1#

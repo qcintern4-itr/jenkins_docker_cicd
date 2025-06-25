@@ -1,0 +1,63 @@
+query inboxes($filter: InboxFilterInput, $limit: Int) {
+  inboxes(filter: $filter, limit: $limit) {
+    isSuccess
+    message
+    reports {
+      id
+      reportId
+      type
+      start
+      stop
+      hasSignature
+      study {
+        id
+        friendlyId
+        deviceId
+        start
+        stop
+        status
+        reportDueDate
+        timezone
+        facility {
+          id
+          name
+          contact {
+            country
+          }
+          arrears
+        }
+        info {
+          interprettingPhysician {
+            id
+            firstName
+            lastName
+          }
+          patient {
+            firstName
+            lastName
+            patientId
+          }
+        }
+        studyType
+        timezone
+        isBiofluxDirect
+      }
+      event {
+        id
+        friendlyId
+        hasClinicData
+        comments
+      }
+      physicianInterpretation
+      technicianComments
+      inbox {
+        date
+        priority
+        isReviewed
+        isRead
+      }
+      isArtifactReport
+    }
+    recentUnreadCount
+  }
+}

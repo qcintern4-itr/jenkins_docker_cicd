@@ -1,0 +1,6 @@
+USER:
+  email: deltatest4@yopmail.com
+  password: 123456789
+UNVERIFIED_USER:
+  email: unverifyacc@yopmail.com
+  password: 123456789

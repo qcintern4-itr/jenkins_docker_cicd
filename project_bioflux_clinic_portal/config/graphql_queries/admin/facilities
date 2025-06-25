@@ -1,0 +1,18 @@
+query facilities($filter: FacilityFilter, $limit: Int) {
+  facilities(filter: $filter, limit: $limit) {
+    id
+    friendlyId
+    name
+    contact {
+      address
+      city
+      state
+      country
+      zip
+      phone1
+      fax
+    }
+    status
+    serviceType
+  }
+}

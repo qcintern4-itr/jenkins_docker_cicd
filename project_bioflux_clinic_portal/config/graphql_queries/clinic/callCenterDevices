@@ -1,0 +1,44 @@
+query callCenterDevices($filter: CallCenterDeviceFilterInput, $limit: Int) {
+  callCenterDevices(filter: $filter, limit: $limit) {
+    ... {
+      id
+      deviceId
+      status
+      model
+      firstStudyDate
+      additionalStatus
+      isRenewal
+      shouldMaintain
+      lastSync {
+        time
+        timezone
+        operator
+        networkMode
+        leadOn
+        isCharging
+        batteryLevel
+        rssi
+        sdFree
+        fwVersion
+        schema
+        gprs
+      }
+      facility {
+        id
+        name
+        contact {
+          country
+        }
+        status
+        programs {
+          protectPlus
+          renewalStock
+        }
+      }
+      additionalStatus
+      model
+      firstStudyDate
+      canRunBiotresMCT
+    }
+  }
+}

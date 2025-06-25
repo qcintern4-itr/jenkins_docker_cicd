@@ -1,0 +1,26 @@
+query clinicTickets($filter: ClinicTicketsFilterInput, $limit: Int) {
+  clinicTickets(filter: $filter, limit: $limit) {
+    id
+    ticketId
+    status
+    facility {
+      id
+      name
+    }
+    category
+    requestedBy {
+      id
+      firstName
+      lastName
+      roles
+    }
+    appName
+    resolvedAt
+    createdAt
+    lastSeenTicketComment {
+      createdBy {
+        id
+      }
+    }
+  }
+}

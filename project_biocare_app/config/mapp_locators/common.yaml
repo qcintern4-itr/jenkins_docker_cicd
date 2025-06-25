@@ -1,0 +1,102 @@
+# App Tester > Login
+ATR_SIGNIN_GOOGLE:
+    android: xpath://android.widget.Button[@content-desc="Sign in with Google"]
+ATR_APPS: xpath://android.view.ViewGroup[@resource-id="dev.firebase.appdistribution:id/row"]
+# Initial screens when starting app
+INIT_CONTINUE:
+    android: a11y_id:Continue
+INIT_SKIP:
+    android: a11y_id:Skip
+INIT_GETSTARTED:
+    android: a11y_id:Get started
+# PROFILE - to get release version
+PROF_ABOUT_BI0CARE:
+    android: a11y_id:About Biocare Health
+RELEASE_VERSION:
+    android: xpath://android.view.View[starts-with(@content-desc, "Version")]
+# Sign-in screen
+REGISTERNOW:
+    android: a11y_id:Register
+SIGNIN_ANOTHER_ACCOUNT:
+    android: xpath://android.view.View[@content-desc="Sign in with another account"]
+EMAIL:
+    android: xpath://android.view.View[@content-desc="Forgot password"]/../android.widget.EditText[1]
+PASSWORD:
+    android: xpath://android.view.View[@content-desc="Forgot password"]/../android.widget.EditText[2]
+VIEWPASSWORD:
+    android: xpath://android.view.View[@content-desc="Forgot password"]/../android.widget.EditText[2]/android.widget.ImageView
+SIGNIN1ST:
+    android: xpath://android.view.View[@content-desc="Sign in"]
+SIGNIN2ST:
+    android: xpath://android.widget.Button[@content-desc="Sign in"]
+FORGOTPASSWORD:
+    android: a11y_id:Forgot password
+SYNCING_DATA:
+    android: xpath://android.view.View[@content-desc="Please wait..."]
+GUIDE_SUMMARYUPDATE:
+    android: xpath://android.view.View[@content-desc="Summary update"]
+GUIDE_SUMMARYUPDATE_NEXT:
+    android: xpath://android.widget.Button[@content-desc="Next"]
+GUIDE_SUMMARYUPDATE_CLOSE:
+    android: xpath://android.widget.Button[@content-desc="Next"]/../android.widget.ImageView
+GUIDE_NOTICENTER_NEXT:
+    android: xpath://android.view.View[@content-desc="Get crucial updates via the Notification Center."]/../android.view.View[3]
+GUIDE_INPUTMEASURE_NEXT:
+    android: xpath://android.view.View[starts-with(@content-desc, 'Use the "Add" button to input measurements')]/../android.view.View[3]
+GUIDE_SUMMARYMENU_NEXT:
+    android: xpath://android.view.View[contains(@content-desc, 'using the "Summary" tab.')]/../android.view.View[3]
+GUIDE_DEVICEMENU_NEXT:
+    android: xpath://android.view.View[starts-with(@content-desc, "Connect your Bioflux, Biotres, or Bioheart devices")]/../android.view.View[3]
+GUIDE_SERVICEMENU_NEXT:
+    android: xpath://android.view.View[ends-with(@content-desc, '"Services" tab.')]/../android.view.View[3]
+# Menu Bar
+TABS:
+    android: xpath://android.widget.ImageView[contains(@content-desc, "Tab")]
+# Register account
+REGISTER:
+    android: xpath://android.view.View[@content-desc="Register now"]
+FIRST_NAME:
+    android: xpath://android.view.View[2]/android.view.View/android.widget.EditText[1]
+LAST_NAME:
+    android: xpath://android.view.View[2]/android.view.View/android.widget.EditText[2]
+REGISTER_EMAIL:
+    android: xpath://android.view.View[2]/android.view.View/android.widget.EditText[3]
+REGISTER_PASSWORD:
+    android: xpath://android.view.View[2]/android.view.View/android.widget.EditText[4]
+CONFIRM_PASS:
+    android: xpath://android.view.View[2]/android.view.View/android.widget.EditText[5]
+CREATE_ACCOUNT:
+    android: xpath://android.widget.Button[@content-desc="Create account"]
+CONTENT_DESC:
+    android: xpath://android.view.View
+PAGE:
+    android: xpath://android.widget.ImageView
+PRIVACY_POLICY:
+    android: xpath://android.widget.Button[@content-desc="Privacy policy"]
+TERMS_AND_CONDITIONS:
+    android: xpath://android.widget.Button[@content-desc="Terms and conditions"]
+UNDERSTOOD:
+    android: xpath://android.widget.Button[@content-desc="Understood"]
+CLOSE:
+    android: xpath://android.view.View[@content-desc]/android.widget.ImageView
+BACK_TO_SIGNIN:
+    android: xpath://android.widget.Button[@content-desc="Back to sign in"]
+# Forgot password
+FORGOT_PASSWORD:
+    android: xpath://android.view.View[@content-desc="Forgot password"]
+RESET_PASS_EMAIL:
+    android: xpath://android.widget.ImageView[3]
+CLOSE_RESET_PASS:
+    android: xpath://android.widget.ImageView[1]
+SEND:
+    android: xpath://android.widget.Button[@content-desc="Send"]
+VERIFICATION_CODE:
+    android: xpath://android.view.View[@content-desc="Update password"]/android.view.View/android.widget.EditText[position() <= 6]
+NEW_PASS:
+    android: xpath://android.view.View[@content-desc="Update password"]/android.view.View/android.widget.EditText[7]
+CONFIRM_NEW_PASS:
+    android: xpath://android.view.View[@content-desc="Update password"]/android.view.View/android.widget.EditText[8]
+UPDATE:
+    android: xpath://android.widget.Button[@content-desc="Update"]
+RESEND_NOW:
+    android: xpath://android.view.View[@content-desc=" Resend now"]

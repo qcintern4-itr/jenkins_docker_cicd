@@ -1,0 +1,17 @@
+RHY_TAB = 'xpath://div[contains(@class,"snapshotList")]//div[contains(@class,"button")]'
+# Rhythm diary all snapshot
+RHY_SNAPSHOT_ROOT = 'xpath://div[contains(@class,"snapshotCard__")]'
+RHY_SNAPSHOT_START_TIME = 'xpath:.//div[contains(@class,"header")]//div[contains(@class,"startTime")]'
+RHY_SNAPSHOT_CREATED_TIME = 'xpath:.//div[contains(@class,"header")]//div[contains(@class,"createdTime")]'
+RHY_SNAPSHOT_DURATION = 'xpath:.//div[contains(@class,"info")]//div[contains(@class,"duration__")]'
+RHY_SNAPSHOT_HR = 'xpath:.//div[contains(@class,"info")]//div[contains(@class,"heartRate__")]'
+RHY_SNAPSHOT_ECG = 'xpath:.//div[contains(@class,"body")]//div[contains(@class,"thumbnail")]'
+RHY_SNAPSHOT_STAR = 'xpath:.//div[contains(@class,"body")]//div[contains(@class,"star__")]'
+RHY_SNAPSHOT_TAG = 'xpath:.//div[contains(@class,"_selectedTag__")]'
+RHY_SNAPSHOT_NOTE = 'xpath:.//div[contains(@class,"_note__")]'
+# Rhythm diary snapshot detail
+RHY_SNAPSHOT_DETAIL = 'xpath://div[contains(@class,"snapshotDetail__")]'
+RHY_SNAPSHOT_DETAIL_HR = 'xpath://div[contains(@class,"snapshotDetail__")]//div[contains(@class,"heartRate")]'
+RHY_SNAPSHOT_DETAIL_START = 'xpath://div[contains(@class,"snapshotDetail__")]//div[contains(@class,"start")]'
+RHY_SNAPSHOT_DETAIL_TAG = 'xpath://div[contains(@class,"snapshotDetail__")]//div[contains(@class,"_selectedTag__")]'
+RHY_SNAPSHOT_DETAIL_NOTE = 'xpath://div[contains(@class,"snapshotDetail__")]//div[contains(@class,"note")]'

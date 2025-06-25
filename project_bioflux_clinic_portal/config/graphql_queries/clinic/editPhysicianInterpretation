@@ -1,0 +1,10 @@
+mutation editPhysicianInterpretation($id: ID!, $interpretation: String!, $signature: String) {
+  editPhysicianInterpretation(
+    id: $id
+    interpretation: $interpretation
+    signature: $signature
+  ) {
+    isSuccess
+    message
+  }
+}

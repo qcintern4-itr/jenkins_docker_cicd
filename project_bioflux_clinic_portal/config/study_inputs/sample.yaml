@@ -1,0 +1,59 @@
+input:
+    facility: 5b1f89636c218d7651acf012
+    deviceId: "3318020119"
+    onboarding:
+        patientSymptoms:
+            - Shortness of breath
+        frequentlyOfSymptoms:
+            - Less than 6
+        usedHeartMonitor: true
+        pacer: "No"
+    referringPhysician: 62412f735fe407d2e67f0775
+    interprettingPhysician: 5b6aab8e830f785ae31b6946
+    technician: 5f913c5e558a3971141cde0d
+    studyType: CARDIAC EVENT
+    clinicianInitials: nn
+    isTest: true
+    deviceType: Biotres
+    patient:
+        contact:
+            address: 120-55 Queens Boulevard
+            city: Queens
+            state: NY
+            country: US
+            zip: "11424"
+            phone1: 111-111-1111
+            phone2: 222-222-2222
+        secondaryContact:
+            name: second
+            relationship: hb
+            phone: 333-333-3333
+            email: test2@test.com
+        patientId: "12123"
+        dob: 10/10/1980
+        firstName: Test
+        middleName: Mi
+        lastName: Study
+        gender: Male
+        email: test@test.com
+    studySetting:
+        duration: 4320
+        preEventTime: 30
+        postEventTime: 30
+        bradycardiaThreshold: 1
+        tachycardiaThreshold: 300
+        pauseLevel: 2.5
+        pauseDetection: false
+        afibDetection: false
+        diagnosticLead: 2
+    diagnosis:
+        physiciansNote: nhan
+        primary: "R00.0 - Tachycardia, unspecified"
+        patientMedications: nn
+        second: "R00.0 - Tachycardia, unspecified"
+    insurance:
+        type: Medicare
+        provider: test
+        preAuth: "true"
+    reportDueDate: "2022-04-18"
+    studyCategory: Bioflux

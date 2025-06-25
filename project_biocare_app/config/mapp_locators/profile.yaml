@@ -1,0 +1,94 @@
+SAVE:
+  android: xpath://android.widget.Button[@content-desc="Save"]
+BACK:
+  android: xpath://android.view.View[@content-desc="Edit profile"]/android.widget.ImageView
+BASIC_INFO:
+  android: xpath://android.view.View[@content-desc="DT"]/android.view.View[@clickable="true"][1]
+FIRST_NAME:
+  android: xpath://android.view.View/android.widget.ScrollView/android.widget.EditText[1]
+LAST_NAME:
+  android: xpath://android.view.View/android.widget.ScrollView/android.widget.EditText[2]
+DOB:
+  android: xpath://android.view.View/android.view.View/android.widget.ScrollView/android.view.View[5]
+DOB_MONTH:
+  android: xpath://android.view.View/android.widget.SeekBar[1]
+DOB_DAY:
+  android: xpath://android.view.View/android.widget.SeekBar[2]
+DOB_YEAR:
+  android: xpath://android.view.View/android.widget.SeekBar[3]
+GENDER_MALE:
+  android: a11y_id:Male
+GENDER_FEMALE:
+  android: a11y_id:Female
+BODY_MEASUREMENT:
+  android: xpath://android.view.View/android.widget.ScrollView/android.widget.Button
+HEIGHT:
+  android: xpath://android.view.View/android.view.View/android.widget.ScrollView/android.view.View[10]
+WEIGHT:
+  android: xpath://android.view.View/android.view.View/android.widget.ScrollView/android.view.View[11]
+WEIGHT_VALUE:
+  android: xpath://android.view.View/android.view.View/android.view.View[1]/android.view.View/android.view.View[3]
+RIGHT_WEIGHT:
+  android: xpath://android.view.View[4]/android.view.View/android.view.View[20]
+LEFT_WEIGHT:
+  android: xpath://android.view.View[4]/android.view.View/android.view.View[18]
+CONTACT_INFO:
+  android: xpath://android.view.View[@content-desc="DT"]/android.view.View[@clickable="true"][2]
+COUNTRY:
+  android: xpath://android.view.View[@content-desc="DT"]/android.view.View[3]/android.view.View/android.view.View/android.view.View/android.view.View[2]
+INPUT_COUNTRY:
+  android: xpath://android.view.View/android.view.View/android.view.View[1]/android.view.View/android.view.View[2]/android.view.View/android.view.View
+SELECT:
+  android: xpath://android.widget.Button[@content-desc="Select"]
+PHONE_NUMBER:
+  android: xpath://android.view.View[@content-desc="DT"]/android.view.View[3]/android.view.View/android.view.View/android.view.View/android.widget.EditText[1]
+ADDRESS:
+  android: xpath://android.view.View[@content-desc="DT"]/android.view.View[3]/android.view.View/android.view.View/android.view.View/android.view.View[5]
+SEARCH_ADDRESS:
+  android: xpath://android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.widget.ImageView
+SELECT_ADDRESS:
+  android: xpath://android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View/android.view.View/android.view.View
+CITY:
+  android: xpath://android.view.View[@content-desc="DT"]/android.view.View[3]/android.view.View/android.view.View/android.view.View/android.view.View[7]
+SEARCH_CITY:
+  android: xpath://android.view.View/android.view.View/android.view.View/android.view.View[2]/android.widget.ImageView
+SELECT_CITY:
+  android: xpath://android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View/android.view.View/android.view.View
+STATE:
+  android: xpath://android.view.View[@content-desc="DT"]/android.view.View[3]/android.view.View/android.view.View/android.view.View/android.view.View[10]
+SEARCH_STATE:
+  android: xpath://android.view.View/android.view.View/android.view.View/android.view.View[2]/android.widget.ImageView
+SELECT_STATE:
+  android: xpath://android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View/android.view.View/android.view.View
+ZIPCODE:
+  android: xpath://android.view.View[@content-desc="DT"]/android.view.View[3]/android.view.View/android.view.View/android.widget.ScrollView/android.widget.EditText[2]
+SIGN_OUT:
+  android: xpath://android.widget.Button[@content-desc="Sign out"]
+CANCEL:
+  android: xpath://android.widget.Button[@content-desc="Cancel"]
+SIGNOUT_DIALOG:
+  android: xpath://android.widget.ImageView[@content-desc="Sign out Are you sure you wish to sign out?"]
+SETTINGS:
+  android: xpath://android.widget.ImageView[@content-desc="Settings"]
+UNITS:
+  android: xpath://android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.widget.Button
+MEDICATION_REMINDER:
+  android: xpath://android.view.View[7]/android.widget.Switch
+DAILY_REMINDER:
+  android: xpath://android.view.View[9]/android.widget.Switch
+CHANGE_PASS:
+  android: xpath://android.widget.ImageView[@content-desc="Change password"]
+CURRENT_PASS:
+  android: xpath://android.view.View[2]/android.view.View/android.widget.EditText[1]
+PASSWORD:
+  android: xpath://android.view.View[2]/android.view.View/android.widget.EditText[2]
+CONFIRM_PASS:
+  android: xpath://android.view.View[2]/android.view.View/android.widget.EditText[3]
+UPDATE:
+  android: xpath://android.widget.Button[@content-desc="Update"]
+DELETE_ACCOUNT:
+  android: xpath://android.widget.ImageView[@content-desc="Delete account"]
+DELETE_MY_ACCOUNT:
+  android: xpath://android.widget.Button[@content-desc="Delete my account"]
+DELETE:
+  android: xpath://android.widget.Button[@content-desc="Delete"]

@@ -1,0 +1,186 @@
+mutation updateStudy($studyId: ID!, $props: UpdateStudyInput!) {
+  updateStudy(studyId: $studyId, props: $props) {
+    isSuccess
+    message
+    study {
+      id
+      friendlyId
+      referenceCode
+      artifact {
+        resolvedAt
+        percentage
+        lastIssueFound
+        commonIssueFound
+        shouldBeResolved
+        shouldBeReviewed
+      }
+      isBiofluxDirect
+      lowCellSignal
+      rma
+      onboarding {
+        ... {
+          patientSymptoms
+          frequentlyOfSymptoms
+          usedHeartMonitor
+          pacer
+        }
+      }
+      info {
+        insurance {
+          ... {
+            type
+            provider
+            preAuth
+          }
+        }
+        patient {
+          ... {
+            contact {
+              address
+              city
+              state
+              country
+              zip
+              phone1
+              phone2
+            }
+            secondaryContact {
+              name
+              phone
+              relationship
+              email
+            }
+            patientId
+            dob
+            firstName
+            middleName
+            lastName
+            gender
+            email
+            weight
+            height
+            isMetric
+          }
+        }
+        interprettingPhysician {
+          id
+          firstName
+          lastName
+          contact {
+            phone1
+            nightPhone
+            fax
+          }
+          email
+        }
+        referringPhysician {
+          id
+          firstName
+          lastName
+          contact {
+            phone1
+            nightPhone
+            fax
+          }
+          email
+        }
+        diagnosis {
+          ... {
+            primary
+            otherPrimary
+            second
+            otherSecond
+            physiciansNote
+            patientMedications
+          }
+        }
+        followOnStudy {
+          duration
+          studyType
+          reportDueDate
+        }
+        clinicianInitials
+      }
+      studyHistory {
+        time
+        batteryLevel
+        status
+      }
+      deviceNotifications {
+        time
+        batteryLevel
+        status
+      }
+      reports {
+        id
+        reportId
+        type
+        createdAt
+        start
+        stop
+        status
+        event {
+          friendlyId
+          id
+        }
+        technicianComments
+        physicianInterpretation
+        lastModified
+        inbox {
+          date
+          priority
+        }
+        isArtifactReport
+      }
+      start
+      stop
+      studyType
+      status
+      reportDueDate
+      studyNote
+      timezone
+      initDuration
+      linkedStudies {
+        id
+        friendlyId
+        initDuration
+        studyType
+        reportDueDate
+      }
+      studySetting {
+        ... {
+          duration
+          preEventTime
+          postEventTime
+          bradycardiaThreshold
+          tachycardiaThreshold
+          pauseLevel
+          pauseDetection
+          afibDetection
+          diagnosticLead
+        }
+      }
+      facility {
+        id
+        name
+        contact {
+          country
+        }
+        status
+        arrears
+        canViewFlaggedStudies
+      }
+      device {
+        id
+        deviceId
+        status
+        model
+        lastSync {
+          operator
+          gprs
+          schema
+        }
+      }
+    }
+  }
+}

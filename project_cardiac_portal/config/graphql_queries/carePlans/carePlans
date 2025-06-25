@@ -1,0 +1,72 @@
+query carePlans($filter: CarePlanFilterInput, $limit: Int) {
+  carePlans(filter: $filter, limit: $limit) {
+    isSuccess
+    message
+    cursor
+    carePlans {
+      _id
+      friendlyId
+      nurseStatus
+      patientDemographic {
+        ... {
+          firstName
+          lastName
+          gender
+          dateOfBirth
+          height
+          weight
+          contact {
+            ... {
+              phone1
+              country
+              address
+              city
+              state
+              zip
+            }
+          }
+          email
+          patientInfo {
+            insuranceType
+            insuranceName
+            insuranceExpireDate
+            insuranceProvincialBilling
+          }
+        }
+      }
+      patient {
+        ... {
+          ... {
+            _id
+            firstName
+            lastName
+            middleName
+            photo
+          }
+          email
+          contact {
+            phone1
+          }
+          willDeletedAt
+        }
+      }
+      facility {
+        ... {
+          _id
+          name
+          canUseBiofluxDirect
+          contact {
+            ... {
+              phone1
+              country
+              address
+              city
+              state
+              zip
+            }
+          }
+        }
+      }
+    }
+  }
+}

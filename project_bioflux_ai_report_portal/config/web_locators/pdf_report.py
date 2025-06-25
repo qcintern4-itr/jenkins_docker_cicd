@@ -1,0 +1,8 @@
+ELEMENT_PDF_REPORT_IFRAME = 'xpath://iframe[@id="pdf-viewer"]'
+ELEMENT_PDF_REPORT_DOWNLOAD = 'xpath://div[@id="ic-download-report"]//button'
+ELEMENT_PDF_REPORT_PAGE = 'xpath://div[contains(@class,"active")]//div[@class="pdf-report-tab"]'
+ELEMENT_PDF_REPORT_FINDINGS = 'xpath://div[contains(@class,"active")]//textarea[@id="findings-input-id"]'
+ELEMENT_PDF_REPORT_GENERATE = 'xpath://div[@id="generatePdfReportBtn"]//button'
+SUB_TABS = 'xpath://ul[contains(@class, "top-nav-tabs ")]/li'
+UPDATE_FINDINGS = 'xpath://button[@id="updateFindings"]'
+CONTINUE_BUTTON = 'xpath://button[@class="filled-btn"]//span[text()="Continue"]'

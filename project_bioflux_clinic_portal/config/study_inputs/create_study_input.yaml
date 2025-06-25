@@ -1,0 +1,70 @@
+{
+  "input": {
+    "facility": "635910125c785a1eaf5874e4",
+    "deviceId": "3323100003",
+    "onboarding": {
+      "patientSymptoms": [
+        "Irregular heartbeat"
+      ],
+      "frequentlyOfSymptoms": [
+        "From 6 to 12"
+      ],
+      "usedHeartMonitor": true,
+      "pacer": "No",
+      "icd": true
+    },
+    "referringPhysician": "6359fb2e5c785a3de05874f6",
+    "interprettingPhysician": "6359fb2e5c785a3de05874f6",
+    "technician": "6359fb2e5c785a3de05874f6",
+    "studyType": "CARDIAC EVENT",
+    "clinicianInitials": "Clinician Initials",
+    "deviceType": "Bioflux",
+    "patient": {
+      "contact": {
+        "address": "AAA Minneapolis - St. Louis Park",
+        "city": "St. Louis Park",
+        "state": "MN",
+        "country": "US",
+        "zip": "55416",
+        "phone1": "484-414-5043"
+      },
+      "secondaryContact": {},
+      "patientId": "T01",
+      "dob": "11/11/2000",
+      "firstName": "Patient",
+      "middleName": "Test",
+      "lastName": "API Test",
+      "gender": "Male",
+      "email": "auto_patient@yopmail.com",
+      "height": 4.333333333333333,
+      "weight": 44,
+      "isMetric": false,
+      "ethnicity": "Asian"
+    },
+    "studySetting": {
+      "duration": 4320,
+      "preEventTime": 30,
+      "postEventTime": 30,
+      "bradycardiaThreshold": 40,
+      "tachycardiaThreshold": 120,
+      "pauseLevel": 2.5,
+      "pauseDetection": true,
+      "afibDetection": false,
+      "diagnosticLead": 2
+    },
+    "diagnosis": {
+      "physiciansNote": "comment_01",
+      "primary": "Other",
+      "otherPrimary": "Other primary diagnosis code",
+      "patientMedications": "comment_02",
+      "second": "Other",
+      "otherSecond": "Other secondary diagnosis code"
+    },
+    "insurance": {
+      "type": "Medicare",
+      "preAuth": "true"
+    },
+    "reportDueDate": "2024-12-17",
+    "studyCategory": "Bioflux"
+  }
+}

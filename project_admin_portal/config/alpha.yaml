@@ -1,0 +1,6 @@
+WEB_BASE_URL: https://admin.alpha.bioflux.io
+USER:
+  admin_01:
+    username: admin
+    password: biofluxabc
+

@@ -1,0 +1,12 @@
+STATUS = 'xpath:(//div[@class="notification-reports-wrapper"]//div[contains(@class, "select-ct-wrapper")])[1]'
+STATUS_OPTIONS = 'xpath:(//div[@class="notification-reports-wrapper"]//div[contains(@class, "select-ct-wrapper")])[1]//div[contains(@class, "ant-select-item-option-content")]'
+PATIENT = 'xpath:(//div[@class="notification-reports-wrapper"]//div[contains(@class, "select-ct-wrapper")])[2]'
+PATIENT_OPTIONS = 'xpath:(//div[@class="notification-reports-wrapper"]//div[contains(@class, "select-ct-wrapper")])[2]//div[contains(@class, "ant-select-item-option-content")]'
+SEARCHBY = 'xpath://div[@class="notification-reports-wrapper"]//span[contains(@class, "search-filter-btn")]'
+SEARCHBY_OPTIONS = 'xpath://ul[contains(@class, "search-menu-wrapper")]//span[@class="ant-dropdown-menu-title-content"]'
+SEARCH_TEXTBOX = 'xpath://div[@class="notification-reports-wrapper"]//input[contains(@placeholder, "Search by")]'
+HEADER = 'xpath://div[@class="notification-reports-wrapper"]//thead//th'
+CONTENT = 'xpath://div[@class = "notification-reports-wrapper"]//tbody//tr[@data-row-key]/td'
+CONTENT_ROW = 'xpath://div[@class="notification-reports-wrapper"]//tbody//tr[@data-row-key]'
+CONTENT_PATIENTNAME = 'xpath://div[@class="notification-reports-wrapper"]//tbody//td//button[contains(@class, "text-color-blue")]'
+

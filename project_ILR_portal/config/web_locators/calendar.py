@@ -1,0 +1,18 @@
+SEARCHDATE = 'xpath://input[@name="selectedDate"]'
+SEARCHDATE_TODAY = 'class:ant-picker-today-btn'
+VIEWMODES = 'xpath://div[@class="calendar-view-mode"]//button'
+SEARCHBOX = 'xpath://input[@placeholder="Search by patient name"]'
+BYTYPE = 'xpath://div[contains(@class, "appointment-type-select")]//div[@class="ant-select-selector"]'
+BYTYPE_OPTIONS = 'xpath://div[contains(@class, "ant-select-dropdown") and not(contains(@class, "hidden"))]//div[@class="ant-select-item-option-content"]'
+BYCALENDAR = 'xpath://div[contains(@class, "calendar-type-select")]//div[@class="ant-select-selector"]'
+BYCALENDAR_OPTIONS = 'xpath://div[contains(@class, "ant-select-dropdown") and not(contains(@class, "hidden"))]//div[@class="ant-select-item-option-content"]'
+BYWEEKTIME = 'xpath://div[@class="week-time-frame"]//li[contains(@class, "week-time-frame-item")]'
+BYWEEKTIME_PREVIOUS = 'xpath://div[@class="week-time-frame"]//button[contains(@class, "time-frame-prev-btn")]'
+BYWEEKTIME_NEXT = 'xpath://div[@class="week-time-frame"]//button[contains(@class, "time-frame-next-btn")]'
+# VIEW DAY MODE
+VDAY_DATA_CONTENT = 'xpath://div[contains(@class, "timeGridDay-view")]//tbody//tr'
+# VIEW LIST MODE
+VLIST_DATA_DATE = 'xpath://div[contains(@class, "calendar-break-section__label")]'
+VLIST_DATA_CONTENT_ROOT = 'xpath://div[@class="custom-event-container"]'
+VLIST_DATA_CONTENT_ROOT_ROW = 'xpath:.//div[contains(@class, "calendar-event-row") and contains(@class, "custom-event")]'
+VLIST_DATA_CONTENT = 'xpath:.//div[contains(@class, "event-row-border-bottom")]/div[contains(@class, "calendar-event-row__")]'

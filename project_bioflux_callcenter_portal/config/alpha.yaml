@@ -1,0 +1,5 @@
+WEB_BASE_URL: https://callcenter.alpha.bioflux.io/login
+NEW_USERS:
+    callcenter_ai:
+        username: qafetest
+        password: 3#Monitoring3#

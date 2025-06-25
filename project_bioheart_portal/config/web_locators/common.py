@@ -1,0 +1,42 @@
+# Login
+EMAIL = 'name:username'
+PASSWORD = 'name:password'
+SIGNIN = 'xpath://button[@type="submit"]'
+RELEASE_VERSION = 'xpath;//div[contains(@class, "versionContainer")]'
+# Create account
+CREATE_ACCOUNT = 'xpath://div[contains(@class, "createAccountContainer")]/a'
+FIRSTNAME = 'name:firstName'
+LASTNAME = 'name:lastName'
+EMAIL_CREATE_ACCOUNT = 'name:email'
+NEXT = 'xpath://div[contains(@class, "createAccountStep1Footer")]//button'
+PASSWORD_CREATE_ACCOUNT = 'xpath://div[contains(@class, "createAccountStep2")]//input[@name="password"]'
+CONFIRM_PASSWORD = 'name:confirmPassword'
+BACK_SIGNIN = 'xpath://div[contains(@class, "verifyEmailFooter")]//button'
+BACK = 'xpath://div[contains(@class, "backButton")]//button'
+FINISH = 'xpath://div[contains(@class, "finishButton")]//button'
+# Forgot Password
+FORGOT_PASSWORD = 'xpath://div[contains(@class, "textForgotPassword")]/a'
+SEND_REQUEST = 'xpath://div[contains(@class, "forgotPasswordFooter")]//button'
+CLOSE = 'xpath://div[contains(@class, "closeIconButton")]//button'
+VERIFY_CODE = 'name:code'
+UPDATE_PASS = 'xpath://div[contains(@class, "updatePasswordFooter")]//button'
+VISIBILITY_PASS = 'xpath://button[contains(@aria-label, "toggle password visibility")]'
+# Main Common
+MENU = 'xpath://div[contains(@class, "leftSideMenu")]//button'
+# Logout
+SIGNOUT = 'xpath://button[contains(@class, "style_signOutButton")]'
+CONFIRM_SIGNOUT = 'xpath://div[contains(@class,"signOutModalFooter")]/button[2]'
+CANCEL_SIGOUT = 'xpath://div[contains(@class,"signOutModalFooter")]/button[1]'
+# Title
+CHANGE_PASS_TITLE = 'xpath://div[contains(@class, "changePasswordContentTitle")]'
+EDIT_PROF_TITLE = 'xpath://div[contains(@class,"editProfileContentHeader")]/div'
+PROF_TITLE = 'xpath://div[contains(@class,"style_profileDrawerHeader")]'
+SET_TITLE = 'xpath://div[contains(@class,"style_settingDrawerHeader")]'
+FORGOT_PASS_TITLE = 'xpath://div[contains(@class,"style_forgotPassword")]//h1'
+SIGNIN_TITLE = 'xpath://div[contains(@class, "style_loginBox")]/h1'
+CREATE_ACCOUNT_TITLE = 'xpath://div[contains(@class, "style_createAccountContentHeader")]'
+UPDATE_PASS_TITLE = 'xpath://div[contains(@class, "style_updatePassword")]/h1'
+OVERVIEW_TITLE = 'xpath://div[contains(@class, "style_overviewHeaderTitle")]'
+# Error Message
+ERROR_MESSAGE = 'xpath://div[contains(@class, "style_errorMessage")]'
+NOTICE_DESCRIPTION = 'xpath://div[contains(@class, "notification-notice-description")]'

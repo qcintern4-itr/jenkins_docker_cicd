@@ -1,0 +1,103 @@
+#WEB_BASE_URL: https://delta.bioflux.io
+WEB_BASE_URL: https://diagnostics.delta.bioflux.io
+API_BASE_URL: https://admin-backend.delta.bioflux.io
+USER:
+    clinic_technician:
+        username: clinictech01
+        password: 12345678
+    clinic_physician:
+        username: clinicphy01
+        password: 12345678
+
+USER_BIOCARE:
+    - name: Test Auto Phy 001 #F001 F002
+      username: test_auto_phy_001
+      password: test_auto_001
+    - name: Test Auto Phy 002 # F001 but deactivated
+      username: test_auto_phy_002
+      password: 2@2@test_auto_phy_002100
+    - name: Test Auto Phy 003 # F003 was closed -> Deactivated
+      username: test_auto_phy_003
+      password: 2@2@test_auto_phy_003100
+    - name: Test Auto Tech 001 #F001 F002
+      username: test_auto_001
+      password: 2@2@test_auto_001100
+
+NEW_USER:
+    clinic_physician:
+        - name: Physician Qa Team 01
+          username: physician_qa_team_01
+          password: Welcomeqa1#
+        - name: Physician Qa Team 02
+          username: physician_qa_team_02
+          password: Welcomeqa1#
+          userID: 635a0afc14ba33394f6504e1
+    clinic_technician:
+        - name: Technician Qa Team 01
+          username: nurse_qa_team_01
+          password: Welcomeqa1#
+        - name: Technician Qa Team 02
+          username: nurse_qa_team_02
+          password: Welcomeqa1#
+
+FACILITY:
+    - name: Facility_QA_01  # Group: Facility Group Auto QA
+      id: 6359191349061c4a518a6da0
+      friendly_id: 1001149
+    - name: Facility_QA_02  # Group: Facility Group Auto QA
+      id: 6359f76b32b51c4ccafed877
+      friendly_id: 1001156
+
+DEVICE:
+    bioflux_device:
+      - id: '3318020102'  # Facility_QA_01
+        model: Bioflux
+      - id: '3323100001'  # Facility_QA_02
+        model: Bioflux
+      - id: '3323100002'  # Facility_QA_02
+        model: Bioflux
+
+AWS_AUTH:
+  users:
+    - username: qc_clinic_tech_automation_01@gmail.com
+      password: Aa11223344
+    - username: qc_clinic_physician_automation_01@gmail.com
+      password: Aa11223344
+  client_id: 7envlpflqtdd3m53o4uihiucok
+
+#login callcenter app
+WEB_BASE_URL_CALLCENTER: https://callcenter.delta.bioflux.io
+NEW_USERS_CALLCENTER:
+    callcenter_technician:
+        username: cct_qa_01
+        password: 3#Monitoring3#
+    callcenter_qa:
+        username: ccqa_qa_01
+        password: 3#Monitoring3#
+    callcenter_qaleader:
+        username: ccqal_qa_01
+        password: 3#Monitoring3#
+    callcenter_supervisor:
+        username: super3
+        password: 3#Monitoring3#
+
+#login direct portal
+WEB_BASE_URL_DIRECT: https://direct.delta.bioflux.io/
+NEW_USERS_DIRECT:
+    direct_user:
+        username: om01
+        password: 3#Monitoring3#
+
+STUDY_ID:
+    study_id_completed:
+        study_id_archived: '09068'
+        aborted_study_id: '11210'
+        study_id_report: '10965'
+    device_id_rma:
+        device_id: '3999999999'
+        device_id_1: '3333000005'
+    study_id_active:
+        study_id_holter: '08903'
+
+PHYSICIAN:
+    referring_physician: 'Physician Qa Team 03'

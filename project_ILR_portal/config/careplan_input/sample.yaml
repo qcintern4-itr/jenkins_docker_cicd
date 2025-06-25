@@ -1,0 +1,8 @@
+input:
+  filter:
+    status: "NEW",
+    isAssigned: true,
+    sortOrder: "desc",
+    sortField: "NURSE_ASSIGNED_DATE",
+    allPatients: true
+  limit: 10

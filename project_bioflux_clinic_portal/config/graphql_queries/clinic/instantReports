@@ -1,0 +1,62 @@
+query instantReports($filter: InstantReportsFilterInput, $limit: Int) {
+  instantReports(filter: $filter, limit: $limit) {
+    ... {
+      id
+      reportId
+      type
+      start
+      stop
+      hasSignature
+      status
+      study {
+        id
+        friendlyId
+        deviceId
+        start
+        stop
+        status
+        reportDueDate
+        timezone
+        facility {
+          id
+          name
+          contact {
+            country
+          }
+          arrears
+        }
+        info {
+          interprettingPhysician {
+            id
+            firstName
+            lastName
+          }
+          patient {
+            firstName
+            lastName
+            patientId
+          }
+        }
+        studyType
+        timezone
+        isBiofluxDirect
+      }
+      event {
+        id
+        friendlyId
+        hasClinicData
+        comments
+      }
+      physicianInterpretation
+      technicianComments
+      inbox {
+        date
+        priority
+        isReviewed
+        isRead
+      }
+      lastModified
+      isArtifactReport
+    }
+  }
+}

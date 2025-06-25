@@ -1,0 +1,6 @@
+mutation deleteInstantReport($id: ID!) {
+  deleteInstantReport(id: $id) {
+    isSuccess
+    message
+  }
+}

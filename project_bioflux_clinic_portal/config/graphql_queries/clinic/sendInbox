@@ -1,0 +1,6 @@
+mutation sendInbox($id: ID!, $priority: String) {
+  sendInbox(id: $id, priority: $priority) {
+    isSuccess
+    message
+  }
+}

@@ -1,0 +1,45 @@
+ADD_MANUALLY:
+  android: xpath://android.view.View[@content-desc="Home"]/android.widget.ImageView[3]
+MEASUREMENT_ITEMS:
+  android: xpath://android.view.View[3]/android.view.View/android.widget.ImageView
+# Sleep goal
+HOUR:
+  android: xpath://android.view.View/android.view.View[4]
+MINUTE:
+  android: xpath://android.view.View/android.view.View[5]
+INCREASE:
+  android: xpath://android.view.View/android.widget.ImageView[3]
+DECREASE:
+  android: xpath://android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.ImageView[2]
+SAVEORCLOSE:
+  android: xpath://android.view.View[@content-desc]/android.widget.ImageView
+# Body temperature
+TEMPERATURE_TYPE:
+  android: xpath://android.view.View/android.view.View/android.view.View[3]
+TEMPERATURE:
+  android: xpath://android.view.View[@content-desc]
+# SpO2
+SPO2:
+  android: xpath://android.view.View/android.view.View[2][@content-desc]
+ADD_SPO2:
+  android: xpath://android.view.View[2]/android.widget.ImageView[4]
+SUB_SPO2:
+  android: xpath://android.view.View[2]/android.widget.ImageView[2]
+# Heart rate
+HEART_RATE:
+  android: xpath://android.view.View/android.view.View/android.view.View/android.view.View/android.widget.ImageView
+HEART_RATE_VALUE:
+  android: xpath://android.view.View[3]/android.view.View/android.view.View
+# Weight
+WEIGHT:
+  android: xpath://android.view.View/android.view.View[2]/android.view.View[6]
+LEFT_WEIGHT:
+  android: xpath://android.view.View[7]/android.view.View/android.view.View[18]
+RIGHT_WEIGHT:
+  android: xpath://android.view.View[7]/android.view.View/android.view.View[22]
+# Medications
+VIEW_ALL_MED:
+  android: xpath://android.widget.Button[@content-desc="View all medications"]
+ADD:
+  android:
+

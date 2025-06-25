@@ -1,0 +1,46 @@
+WEB_BASE_URL: https://callcenter.delta.bioflux.io/login
+#USERS:
+##    callcenter_technician:
+##        username: technician01
+##        password: 2@2@biotricityca
+#    callcenter_qa:
+#        username: qa1
+#        password: 2@2@biotricityca
+#    callcenter_qalead:
+#        username: leader1
+#        password: 3#Monitoring3#
+#    callcenter_supervisor:
+#        username: super1
+#        password: 3#Monitoring3#
+
+NEW_USERS:
+    callcenter_technician:
+        username: cct_qa_01
+        password: 3#Monitoring3#
+#    callcenter_qa:
+#        username: ccqa_qa_01
+#        password: 3#Monitoring3#
+#    callcenter_qaleader:
+#        username: ccqal_qa_01
+#        password: 3#Monitoring3#
+#    callcenter_supervisor:
+#        username: super3
+#        password: 3#Monitoring3#
+    callcenter_airp:
+          username: super2
+          password: 3#Monitoring3#
+#    callcenter_airp_pdf:
+#      username: ccqa_qa_02
+#      password: 3#Monitoring3#
+#    callcenter_airp:
+#        username: qafetest
+#        password: 3#Monitoring3#
+
+STUDY_ID:
+    study_id_completed:
+        study_id_airp: '12778'
+        study_id_strips_ventricular: '12782'
+        study_id_strips_management: '12779'
+        study_id_strips_management_2: '12780'
+        study_id_strips_supraventricular: '12781'
+        study_id_pdf_report: '12783'

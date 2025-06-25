@@ -1,0 +1,102 @@
+#WEB_BASE_URL: https://staging.biotricity.com
+WEB_BASE_URL: https://diagnostics.staging.biotricity.com
+API_BASE_URL: https://admin-backend.staging.biotricity.com
+USERS:
+    clinic_technician:
+        username: clinictech01
+        password: 2@2@clinictech01va
+    clinic_physician:
+        username: clinicphy01
+        password: 2@2@clinicphy01va
+
+USER_BIOCARE:
+    - name: Test Auto Phy 001 #F001 F002
+      username: test_auto_phy_001
+      password: test_auto_001
+    - name: Test Auto Phy 002 # F001 but deactivated
+      username: test_auto_phy_002
+      password: 2@2@test_auto_phy_002100
+    - name: Test Auto Phy 003 # F003 was closed -> Deactivated
+      username: test_auto_phy_003
+      password: 2@2@test_auto_phy_003100
+    - name: Test Auto Tech 001 #F001 F002
+      username: test_auto_001
+      password: 2@2@test_auto_001100
+
+NEW_USER:
+    clinic_physician:
+        - name: Physician Qa Team 01
+          username: physician_qa_team_01
+          password: Welcomeqa1#
+        - name: Physician Qa Team 02
+          username: physician_qa_team_02
+          password: Welcomeqa1#
+    clinic_technician:
+        - name: Technician Qa Team 01
+          username: nurse_qa_team_01
+          password: Welcomeqa1#
+        - name: Technician Qa Team 02
+          username: nurse_qa_team_02
+          password: Welcomeqa1#
+
+FACILITY:
+    - name: Facility_QA_01  # Group: Facility Group Auto QA
+      id: 635910125c785a1eaf5874e4
+      friendly_id: 1001156
+    - name: Facility_QA_02  # Group: Facility Group Auto QA
+      id: 6359f69c5c785a19c55874f4
+      friendly_id: 1001163
+
+DEVICE:
+    bioflux_device:
+      - id: '3323100003'  # Facility_QA_01
+        model: Bioflux
+      - id: '3323100002'  # Facility_QA_02
+        model: Bioflux
+      - id: '3323100001'  # Facility_QA_02
+        model: Bioflux
+
+AWS_AUTH:
+  users:
+    - username: qc_clinic_tech_automation_01@gmail.com
+      password: Aa11223344
+    - username: qc_clinic_physician_automation_01@gmail.com
+      password: Aa11223344
+  client_id: 62pk7jim5gfi7vab3c6u6gqh3s
+
+#login callcenter app
+WEB_BASE_URL_CALLCENTER: https://callcenter.staging.biotricity.com
+NEW_USERS_CALLCENTER:
+    callcenter_technician:
+        username: cct_qa_01
+        password: 3#Monitoring3#
+    callcenter_qa:
+        username: ccqa_qa_01
+        password: 3#Monitoring3#
+    callcenter_qaleader:
+        username: ccqal_qa_01
+        password: 3#Monitoring3#
+    callcenter_supervisor:
+        username: super5
+        password: 3#Monitoring3#
+
+#login direct portal
+WEB_BASE_URL_DIRECT: https://direct.staging.biotricity.com/
+NEW_USERS_DIRECT:
+    direct_user:
+        username: om01
+        password: 3#Monitoring3#
+
+STUDY_ID:
+    study_id_completed:
+        study_id_archived: '11914'
+        aborted_study_id: '16084'
+        study_id_report: '17086'
+    device_id_rma:
+        device_id: '3414000018'
+        device_id_1: '1520000114'
+    study_id_active:
+        study_id_holter: '14879'
+
+PHYSICIAN:
+    referring_physician: 'QC Automation'

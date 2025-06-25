@@ -1,0 +1,21 @@
+mutation login(
+	$username: String!
+	$password: String!
+	$deviceInfo: DeviceInfoInput
+) {
+	login(username: $username, password: $password, deviceInfo: $deviceInfo) {
+		isSuccess
+		message
+		me {
+			id
+			firstName
+			lastName
+			username
+			role
+			willViewTutorialLater
+			canUseAiViewer
+			isTestAccount
+		}
+		token
+	}
+}

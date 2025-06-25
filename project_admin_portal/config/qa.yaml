@@ -1,0 +1,6 @@
+WEB_BASE_URL: https://admin.delta.bioflux.io
+API_BASE_URL: https://admin-backend.delta.bioflux.io
+USER:
+  admin_01:
+    username: admin
+    password: biofluxabc

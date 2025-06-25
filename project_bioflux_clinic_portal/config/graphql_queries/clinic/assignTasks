@@ -1,0 +1,6 @@
+mutation assignTasks($input: AssignTasksInput) {
+  assignTasks(input: $input) {
+    isSuccess
+    message
+  }
+}

@@ -1,0 +1,70 @@
+WEB_BASE_URL: https://callcenter.delta.bioflux.io
+USERS:
+    callcenter_technician:
+        username: technician01
+        password: Hello!2020
+    callcenter_qa:
+        username: qa1
+        password: Hello!2020
+    callcenter_qalead:
+        username: leader1
+        password: 3#Monitoring3#
+    callcenter_supervisor:
+        username: super1
+        password: 3#Monitoring3#
+
+NEW_USERS:
+    callcenter_technician:
+        username: cct_qa_01
+        password: 3#Monitoring3#
+    callcenter_qa:
+        username: ccqa_qa_01
+        password: 3#Monitoring3#
+    callcenter_qaleader:
+        username: ccqal_qa_01
+        password: 3#Monitoring3#
+    callcenter_supervisor:
+        username: super3
+        password: 3#Monitoring3#
+    callcenter_airp:
+        username: qa1
+        password: Hello!2020
+    sso_customer:
+        username: qc4@biotricity.com
+        password: Xow07129
+
+STUDY_ID:
+    study_id_completed:
+        study_id: '06993'
+        study_id_1: '08888'
+        study_id_2 : '08887'
+        study_id_3 : '08882'
+        study_id_4 : '08849'
+        study_id_5 : '08877'
+        study_id_6 : '07016'
+        study_id_7 : '08743'
+        study_id_8 : '08803'
+        study_id_9 : '10096'
+        study_id_10 : '10093'
+        study_id_archived: '09068'
+        study_id_airp: '05576'
+        study_id_mct: '10986'
+
+#clinic
+WEB_BASE_URL_CLINIC: https://diagnostics.delta.bioflux.io
+NEW_USER_CLINIC:
+    clinic_physician:
+        - name: Physician Qa Team 01
+          username: physician_qa_team_01
+          password: Welcomeqa1#
+        - name: Physician Qa Team 02
+          username: physician_qa_team_02
+          password: Welcomeqa1#
+          userID: 635a0afc14ba33394f6504e1
+    clinic_technician:
+        - name: Technician Qa Team 01
+          username: nurse_qa_team_01
+          password: Welcomeqa1#
+        - name: Technician Qa Team 02
+          username: nurse_qa_team_02
+          password: Welcomeqa1#

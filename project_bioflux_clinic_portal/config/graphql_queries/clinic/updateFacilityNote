@@ -1,0 +1,9 @@
+mutation updateFacilityNote($id: ID!, $note: String) {
+  updateFacilityNote(id: $id, note: $note) {
+    isSuccess
+    message
+    facility {
+      facilityNote
+    }
+  }
+}

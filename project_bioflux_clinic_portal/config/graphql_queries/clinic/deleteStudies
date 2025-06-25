@@ -1,0 +1,6 @@
+mutation deleteStudies($studyIds: [ID]!) {
+  deleteStudies(studyIds: $studyIds) {
+    isSuccess
+    message
+  }
+}

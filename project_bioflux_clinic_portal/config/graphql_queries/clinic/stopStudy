@@ -1,0 +1,6 @@
+mutation stopStudy($studyFid: Int!) {
+	stopStudy(studyFid: $studyFid) {
+		isSuccess
+		message
+	}
+}

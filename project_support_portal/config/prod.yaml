@@ -1,0 +1,5 @@
+WEB_BASE_URL: https://support2.customer.biotricity.com
+WEB_DIGITALIZATION_URL: https://operation.customer.biotricity.com
+USER_DIGITALIZATION:
+    username: dev-om
+    password: 3#Monitoring3#

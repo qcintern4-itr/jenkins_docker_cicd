@@ -1,0 +1,10 @@
+SUM_MENU = 'xpath://div[contains(@class,"summaryLeftSideMenu")]/button'
+SUM_TIMEFRAME = 'xpath://div[contains(@class,"customButtonGroup")]/button'
+SUM_ABOUT_TITLE = 'xpath://div[contains(@class,"aboutIndexCardTitle")]'
+SUM_ABOUT_CONTENT = 'xpath://div[contains(@class,"aboutIndexCard")]/div[2]'
+# Heart Rate
+SUM_HR_HEADER = 'xpath://div[contains(@class,"summaryHeartRateTableHeader")]/p'
+SUM_HR_CONTENT = 'xpath://div[contains(@class,"summaryHeartRateTableBody")]/p'
+# Actives Minutes
+SUM_AM_HEADER = 'xpath://div[contains(@class,"labelValueCard")]/p[1]'
+SUM_AM_VALUE = 'xpath://div[contains(@class,"labelValueCard")]/p[2]'

@@ -1,0 +1,6 @@
+mutation generateSummaryReport($input: SummaryReportDataInput) {
+  generateSummaryReport(input: $input) {
+    isSuccess
+    message
+  }
+}

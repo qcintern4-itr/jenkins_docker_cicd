@@ -1,0 +1,48 @@
+WEB_BASE_URL: https://staging.cardiac.biotricity.com
+API_BASE_URL: https://gateway.staging.cardiac.biotricity.com
+USER:
+  physician:
+    - name: Physician Qa Team 01
+      username: physician_qa_team_01
+      password: Welcomeqa1#
+    - name: Physician Qa Team 02
+      username: physician_qa_team_02
+      password: Welcomeqa1#
+  nurse:
+    - name: Lyly_nurse
+      username: lyly_nurse
+      password: 2@2@LLnurseny
+
+    - name: Technician Qa Team 02
+      username: nurse_qa_team_02
+      password: Welcomeqa1#
+    - name: Technician Qa Team 03
+      username: nurse_qa_team_03
+      password: Welcomeqa1#
+    - name: Technician Qa Team 04
+      username: clinictech01
+      password: 12345678
+  facilities:
+    - Facility_QA_01
+    - Facility_QA_02
+  patient:
+    - name: Patient Qa 01
+    - name: Patient Qa 02
+    - name: Patient Qa 03
+    - name: Patient Qa 04
+    - name: Patient Qa 05
+    - name: Patient Qa 06
+    - name: Patient Qa 07
+    - name: Patient Qa 08
+    - name: Patient Qa 09
+    - name: Patient Qa 10
+    - name: Patient Qa 11
+    - name: Patient Qa 12
+    - name: Patient Qa 13
+    - name: Patient Qa 14
+    - name: Patient Qa 15
+    - name: Patient Qa 16
+    - name: Patient Qa 17
+    - name: Patient Qa 18
+    - name: Patient Qa 19
+    - name: Patient Qa 20

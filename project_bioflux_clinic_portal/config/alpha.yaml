@@ -1,0 +1,5 @@
+AWS_AUTH:
+  users:
+    - name: qc_clinic_tech_automation_01@gmail.com
+      password: Aa11223344
+  client_id: 2r2r2usq2agh5t92088rnv1fma

@@ -1,0 +1,7 @@
+mutation createUser($userData: CreateUserInput) {
+    createUser(userData: $userData) {
+        isSuccess
+        message
+        user
+    }
+}

@@ -1,0 +1,6 @@
+mutation createInstantReport($studyFid: Int!, $start: Timestamp!, $stop: Timestamp!) {
+  createInstantReport(studyFid: $studyFid, start: $start, stop: $stop) {
+    isSuccess
+    message
+  }
+}

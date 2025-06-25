@@ -1,0 +1,64 @@
+mutation updateFacility($facilityInfo: UpdateFacilityInput!, $notificationCriteria: String) {
+  updateFacility(
+    facilityInfo: $facilityInfo
+    notificationCriteria: $notificationCriteria
+  ) {
+    isSuccess
+    message
+    facility {
+      id
+      name
+      contact {
+        address
+        city
+        state
+        country
+        zip
+        phone1
+        phone2
+        nightPhone
+        fax
+        faxes
+      }
+      accountPayable {
+        name
+        address
+        city
+        state
+        country
+        zip
+        email
+        phone1
+        phone2
+        fax
+      }
+      notificationCriteria
+      facilityNote
+      status
+      evalStart
+      evalStop
+      shortName
+      serviceType
+      faxReportAutomatically
+      faxReportManually
+      faxPhysicianAutomatically
+      notificationEmail
+      canSendReportEmail
+      canUseBiofluxDirect
+      canUseBiocareCardiac
+      canAutoChangeLead
+      arrears
+      clinicianContacts {
+        name
+        phone
+        email
+        description
+      }
+      shouldCreateInterimReports
+      assignedSalesRepresentative {
+        firstName
+        lastName
+      }
+    }
+  }
+}

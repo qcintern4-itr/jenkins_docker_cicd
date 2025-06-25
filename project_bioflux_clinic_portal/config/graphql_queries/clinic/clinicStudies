@@ -1,0 +1,144 @@
+query clinicStudies($filter: ClinicStudyFilterInput, $limit: Int) {
+  clinicStudies(filter: $filter, limit: $limit) {
+    id
+    friendlyId
+    info {
+      patient {
+        ... {
+          contact {
+            address
+            city
+            state
+            country
+            zip
+            phone1
+            phone2
+          }
+          secondaryContact {
+            name
+            phone
+            relationship
+            email
+          }
+          patientId
+          dob
+          firstName
+          middleName
+          lastName
+          gender
+          email
+          weight
+          height
+          isMetric
+        }
+      }
+      interprettingPhysician {
+        id
+        firstName
+        lastName
+        contact {
+          phone1
+          nightPhone
+          fax
+        }
+        email
+      }
+      referringPhysician {
+        id
+        firstName
+        lastName
+        contact {
+          phone1
+          nightPhone
+          fax
+        }
+        email
+      }
+      diagnosis {
+        ... {
+          primary
+          otherPrimary
+          second
+          otherSecond
+          physiciansNote
+          patientMedications
+        }
+      }
+      followOnStudy {
+        studyType
+        reportDueDate
+      }
+    }
+    start
+    stop
+    studyType
+    status
+    reportDueDate
+    timezone
+    ecgUploadProgress
+    rma
+    lastStudyHistory {
+      time
+      status
+    }
+    hasArtifactReport
+    linkedStudies {
+      id
+    }
+    facility {
+      id
+      name
+      contact {
+        country
+      }
+    }
+    device {
+      ... {
+        id
+        deviceId
+        status
+        model
+        firstStudyDate
+        additionalStatus
+        isRenewal
+        shouldMaintain
+        lastSync {
+          time
+          timezone
+          operator
+          networkMode
+          leadOn
+          isCharging
+          batteryLevel
+          rssi
+          sdFree
+          fwVersion
+          schema
+          gprs
+        }
+        facility {
+          id
+          name
+          contact {
+            country
+          }
+          status
+          programs {
+            protectPlus
+            renewalStock
+          }
+        }
+        additionalStatus
+        model
+        firstStudyDate
+        canRunBiotresMCT
+      }
+    }
+    initDuration
+    biofluxDirect {
+      status
+      id
+    }
+    isTest
+  }
+}

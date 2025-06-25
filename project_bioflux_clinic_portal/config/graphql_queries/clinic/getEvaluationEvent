@@ -1,0 +1,6 @@
+mutation getEvaluationEvent($studyId: ID!) {
+  getEvaluationEvent(studyId: $studyId) {
+    isSuccess
+    message
+  }
+}

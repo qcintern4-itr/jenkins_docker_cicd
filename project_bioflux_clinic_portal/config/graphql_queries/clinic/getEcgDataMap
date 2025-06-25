@@ -1,0 +1,19 @@
+query getEcgDataMap($filter: EcgDataMapFilterInput!) {
+  getEcgDataMap(filter: $filter) {
+    isSuccess
+    message
+    ecgDataMap {
+      samplingFrequency
+      gain
+      channels
+      data {
+        start
+        stop
+        sampleSize
+        dataUrl
+        hrUrl
+      }
+      querySignature
+    }
+  }
+}

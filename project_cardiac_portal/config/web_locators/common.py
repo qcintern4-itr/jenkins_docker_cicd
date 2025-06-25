@@ -1,0 +1,37 @@
+# Login
+USERNAME = 'id:username'
+PASSWORD = 'id:password'
+SIGNIN = 'xpath://button[@type="submit"]'
+ICONSHORTCUT = 'xpath://a[@class="shortcuts-widget-item"][2]'
+ERRORMESSAGE = 'selector:div.error-message'
+BF_RELEASE_VERSION = 'class:side-bar-version'
+# # Left Menu
+MENU_ITEMS = 'xpath://ul[@role="menu"]/li/*[@class="ant-menu-title-content" or @role="menuitem"]'
+SUBMENU_ITEMS = 'xpath:.//*[@class="ant-menu-title-content"]/a'
+# HEADER
+CLINIC_INPUT = 'xpath://input[@role="combobox"]'
+CLINIC_AREA = 'xpath://input[@role="combobox"]/../..'
+CLINIC_OPTIONS = 'xpath://div[@aria-selected and @title]'
+PAGEHEADER = 'xpath://div[@class="ant-page-header-heading"]'
+# Bottom left notice message
+BOTTOM_SUCCESSMESSAGE = 'xpath://div[contains(@class, "ant-notification-notice-success")]//div[contains(@class, "notification-notice-message")]'
+BOTTOM_ERRMESSAGE = 'xpath://div[contains(@class, "ant-notification-notice-error")]//div[contains(@class, "notification-notice-message")]'
+# Confirmation message
+CONFIRM_MSG = 'xpath://div[@class="confirmation-layout-wrapper"]'
+
+username_1= 'xpath://input[@id="username"]'
+password_1= 'xpath://input[@id="password"]'
+click_menu_patient = 'xpath://a[@href ="/patients"]'
+click_textbox_search = 'xpath://input[contains(@placeholder, "(numbers only)")]'
+click_filter = 'xpath://span[@aria-label ="control"]'
+click_filter_phonenumber = 'xpath://li[contains(@data-menu-id, "phoneNumber")]'
+click_patient_details = 'xpath://tbody[@class ="ant-table-tbody"]'
+patient_name = 'xpath://span[@class ="patient-info-detail-name-value"]'
+program_ID = 'xpath://div[@class="patient-info-detail-right-top"]//div[@class="program-type-style"]'
+email = 'xpath://div[@class ="patient-info-detail-top-item mr12"]'
+click_view_programinfo = 'xpath://button[contains(@class, "mt4")]'
+Facility = 'xpath://div[@class ="program-block-content"]'
+View_prescription = 'xpath://button[contains(@span, "View prescription")]'
+button_filter = 'xpath://button[contains(@class, "filter-button")]'
+checkbox_ccm_rpm = 'xpath://label[contains(@class, "ant-checkbox-group-item")]'
+click_button_apply = 'xpath://button[contains(@class, "custom-button")]'

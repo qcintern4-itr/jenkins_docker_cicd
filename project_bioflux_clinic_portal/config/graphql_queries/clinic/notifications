@@ -1,0 +1,36 @@
+query notifications($filter: NotificationsFilterInput, $limit: Int) {
+  notifications(filter: $filter, limit: $limit) {
+    id
+    type
+    isSeen
+    createdAt
+    artifactStudies {
+      id
+      friendlyId
+      info {
+        patient {
+          firstName
+          lastName
+        }
+      }
+      status
+      timezone
+      artifact {
+        percentage
+      }
+    }
+    rmaTicket {
+      rmaId
+    }
+    facility {
+      id
+      name
+      programs {
+        protectPlus
+        renewalStock
+      }
+      canViewFlaggedStudies
+    }
+    info
+  }
+}

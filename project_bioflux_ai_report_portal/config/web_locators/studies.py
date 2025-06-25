@@ -1,0 +1,32 @@
+TABS = 'xpath://ul[contains(@class, "top-nav-tabs ")]/li'
+FACILITY_INPUT = 'xpath://div[contains(@class, "custom-select-input")]//input'
+FACILITY_OPTIONS = 'xpath://div[starts-with(@id, "react-select")]'
+SEARCHBY = 'id:studies-search-by'
+SEARCHBY_OPTIONS = 'xpath://div[starts-with(@class, "search-by-options")]//button[contains(@class, "toggle-button")]'
+TEXTSEARCH_INPUT = 'xpath://div[@id="search-notification"]//input'
+TEXTSEARCH_STUDYIDVALUES = 'xpath://div[contains(@class, "search-input-prefix__multi-value__label")]'
+TEXTSEARCH_CLEARTEXTSEARCH = 'xpath://button[contains(@class, "btn-clear")]'
+STUDIES_ROW = 'xpath://div[contains(@class, "active")]//tbody//tr'
+STUDIES_NEXT = 'xpath://button[@id="next-page-btn"]'
+# Active
+ACTIVE_DATA_HEADER = 'xpath://div[contains(@class, "active")]//thead//th'
+ACTIVE_DATA_CONTENT = 'xpath://div[contains(@class, "active")]//tbody//td'
+ACTIVE_DATA_CONTENT_ROW = 'xpath://div[contains(@class, "active")]//tbody//tr'
+ACTIVE_DATA_CONTENT_GETECG = 'xpath://button[starts-with(@id, "get-ecg")]'
+ACTIVE_DATA_CONTENT_MANAGESTUDY = 'xpath://a[starts-with(@id, "manage-study")]'
+# End of use
+EOD_DATA_HEADER = 'xpath://div[contains(@class, "active")]//thead//th'
+EOD_DATA_CONTENT = 'xpath://div[contains(@class, "active")]//tbody//td'
+EOD_DATA_CONTENT_ROW = 'xpath://div[contains(@class, "active")]//tbody//tr'
+EOD_DATA_CONTENT_MANAGESTUDY = 'xpath://a[starts-with(@id, "manage-study")]'
+# Completed
+COMPLETED_DATA_HEADER = 'xpath://div[contains(@class, "active")]//thead//th'
+COMPLETED_DATA_CONTENT = 'xpath://div[contains(@class, "active")]//tbody//td'
+COMPLETED_DATA_CONTENT_ROW = 'xpath://div[contains(@class, "active")]//tbody//tr'
+COMPLETED_DATA_CONTENT_MANAGESTUDY = 'xpath://a[starts-with(@id, "manage-study")]'
+COMPLETED_DATA_CONTENT_DOWNLOAD = 'xpath://a[starts-with(@id, "download-study")]'
+COMPLETED_PGN_MESSAGE = 'xpath://div[@class="toast-message"]'
+NO_MORE_STUDY = 'xpath://div[@id="toast-container"]//div[@class="toast-message"]'
+
+# Study Details
+STUDY_ZIP_FILE = 'xpath://button[@id="zip-file-btn"]'

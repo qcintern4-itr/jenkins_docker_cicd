@@ -1,0 +1,6 @@
+APP_PACKAGE: com.biotricity.biocare
+APP_ACTIVITY: com.biotricity.biocare.MainActivity
+
+USER:
+  username: linhtest1@yopmail.com
+  password: '00000000'

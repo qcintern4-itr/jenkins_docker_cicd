@@ -1,0 +1,6 @@
+mutation markInbox($input: MarkInboxInput) {
+  markInbox(input: $input) {
+    isSuccess
+    message
+  }
+}

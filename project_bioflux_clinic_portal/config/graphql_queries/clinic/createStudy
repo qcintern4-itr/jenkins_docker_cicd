@@ -1,0 +1,6 @@
+mutation createStudy($input: StudyInfoInput) {
+    createStudy(input: $input) {
+        isSuccess
+        message
+    }
+}

@@ -1,0 +1,91 @@
+query facility($id: ID!) {
+  facility(id: $id) {
+    id
+    name
+    facilityNumber
+    friendlyId
+    assignedSalesRepresentative {
+      id
+      firstName
+      lastName
+    }
+    programs {
+      protectPlus
+      renewalStock
+    }
+    contact {
+      address
+      city
+      state
+      country
+      zip
+      phone1
+      phone2
+      nightPhone
+      fax
+      faxes
+    }
+    accountPayable {
+      name
+      address
+      city
+      state
+      country
+      zip
+      email
+      phone1
+      phone2
+      fax
+    }
+    adminUser {
+      firstName
+      lastName
+      title
+      email
+      contact {
+        phone1
+        fax
+      }
+    }
+    studySetting {
+      duration
+      preEventTime
+      postEventTime
+      bradycardiaThreshold
+      tachycardiaThreshold
+      pauseLevel
+      pauseDetection
+      afibDetection
+      diagnosticLead
+    }
+    notificationCriteria
+    facilityNote
+    status
+    oldStatus
+    evalStart
+    evalStop
+    shortName
+    serviceType
+    faxReportAutomatically
+    faxReportManually
+    faxPhysicianAutomatically
+    notificationEmail
+    canSendReportEmail
+    canUseBiofluxDirect
+    canUseBiocareCardiac
+    canViewFlaggedStudies
+    canAutoChangeLead
+    arrears
+    clinicianContacts {
+      name
+      phone
+      email
+      description
+    }
+    shouldCreateInterimReports
+    group {
+      id
+      name
+    }
+  }
+}

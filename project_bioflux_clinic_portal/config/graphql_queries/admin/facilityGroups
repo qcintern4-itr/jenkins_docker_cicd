@@ -1,0 +1,20 @@
+query facilityGroups($filter: FacilityGroupFilter, $limit: Int) {
+  facilityGroups(filter: $filter, limit: $limit) {
+    id
+    name
+    createdAt
+    status
+    facilities {
+      id
+      name
+    }
+    callCenterQaGroup {
+      id
+      name
+    }
+    callCenterTechnicianGroup {
+      id
+      name
+    }
+  }
+}

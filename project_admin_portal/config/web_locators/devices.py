@@ -1,0 +1,55 @@
+TABS_HEADER = 'xpath://div[contains(@class, "top-container")]//li[contains(@class, "tab-nav")]'
+# Common locators between In The Field and Inventory
+DV_EDITBUTTON = 'xpath://div[contains(@class, "tab-pane") and contains(@class, "active")]//button[contains(@class, "multi-device-edit-btn")]'
+DV_CREATENEWBUTTON = 'xpath://div[contains(@class, "tab-pane") and contains(@class, "active")]//button[contains(@class, "create-new-device-btn")]'
+DV_HEADER = 'xpath://div[contains(@class, "tab-pane") and contains(@class, "active")]//thead//th[@class="table-header"]'
+DV_CONTENT = 'xpath://div[contains(@class, "tab-pane") and contains(@class, "active")]//tbody/tr[@class]/td'
+DV_CONTENT_ROOT = 'xpath://div[contains(@class, "tab-pane") and contains(@class, "active")]//tbody/tr[@class]'
+DV_DEVICEID = 'xpath://div[contains(@class, "tab-pane") and contains(@class, "active")]//tbody/tr[@class]//div[contains(@class, "device-id-btn")]'
+DV_EDITICONS = 'xpath://div[contains(@class, "tab-pane") and contains(@class, "active")]//tbody/tr[@class]/td//div[contains(@class, "row-action-container")]/a'
+# In the field
+ITF_MODEL = 'xpath://div[contains(@class, "tab-pane") and contains(@class, "active")]//div[contains(@class, "custom-select-input")]/div'
+ITF_MODEL_OPTIONS = 'xpath://div[contains(@class, "select-input-prefix__menu-portal")]//div[contains(@class, "select-input-prefix__option")]'
+ITF_FACILITY = 'xpath://div[contains(@class, "tab-pane") and contains(@class, "active")]//div[contains(@class, "custom-search-facility")]'
+ITF_FACILITY_OPTIONS = 'xpath://div[contains(@class, "tab-pane") and contains(@class, "active")]//div[contains(@class, "facility__menu-list")]//div[contains(@class, "facility__option") and @id]'
+ITF_SEARCHBOX = 'xpath://div[contains(@class, "tab-pane") and contains(@class, "active")]//input[@placeholder="Search by device ID"]'
+ITF_FACILITY_CLEARICON = 'xpath://div[contains(@class, "facility__clear")]'
+# Inventory
+IVT_MODEL = 'xpath://div[contains(@class, "tab-pane") and contains(@class, "active")]//div[contains(@class, "custom-select-input")]'
+IVT_MODEL_OPTIONS = 'xpath://div[contains(@class, "select-input-prefix__menu-portal")]//div[contains(@class, "select-input-prefix__option")]'
+IVT_SEARCHBOX = 'xpath://div[contains(@class, "tab-pane") and contains(@class, "active")]//input[@placeholder="Search by device ID"]'
+# Device info
+DI_HEADER = 'xpath://div[contains(@class, "ant-drawer-open")]//div[@class="device-modal-content"]//span[@class="row-expand-table-child-name"]'
+DI_CONTENT = 'xpath://div[contains(@class, "ant-drawer-open")]//div[@class="device-modal-content"]//span[@class="row-expand-table-child-value"]'
+# Edit multiple devices
+EMD_DEVICE = 'xpath://div[@class="edit-multi-device-container"]//div[contains(@class, "select-device-id")]'
+EMD_DEVICE_OPTIONS = 'xpath://div[contains(@class, "select-input-prefix__menu-list")]//div[contains(@class, "select-input-prefix__option") and @id]//span[not(contains(@class, "option-label-facility"))]'
+EMD_DEVICEMODEL = 'xpath:(//div[@class="edit-multi-device-container"]//div[contains(@class, "custom-select-input")])[1]'
+EMD_DEVICEMODEL_OPTIONS = 'xpath://div[contains(@class, "select-input-prefix__menu-list")]//div[contains(@class, "select-input-prefix__option") and @id]'
+EMD_LOCATIONS = 'xpath://div[@class="edit-multi-device-container"]//div[contains(@class, "custom-radio-input")]'
+EMD_FACILITY = 'xpath:(//div[@class="edit-multi-device-container"]//div[contains(@class, "react-select")])[3]//input'
+EMD_FACILITY_OPTIONS = 'xpath://div[contains(@class, "select-input-prefix__menu-list")]//div[contains(@class, "select-input-prefix__option") and @id]'
+EMD_SAVEBUTTON = 'xpath://div[@class="edit-multi-device-container"]//button[contains(@class, "edit-multi-device-btn")]'
+# Edit single device
+ESD_DEVICEMODELS = 'xpath://div[contains(@class, "edit-device-container")]//input[@name="deviceModel"]/..'
+ESD_LOCATIONS = 'xpath://div[contains(@class, "edit-device-container")]//input[@name="availability"]/..'
+ESD_FACILITY = 'xpath://div[contains(@class, "edit-device-container")]//div[contains(@class, "react-select__value-container")]//input'
+ESD_FACILITY_OPTIONS = 'xpath://div[contains(@class, "react-select__menu-list")]//div[contains(@class, "react-select__option") and @id]'
+ESD_SAVEBUTTON = 'xpath://div[contains(@class, "edit-page")]//button[@id]'
+# Create device
+TABS_TYPECREATE = 'xpath://div[@class="create-page"]//div[contains(@class, "switch-container")]//button'
+# Create single device
+CSD_DEVICEID = 'xpath://div[@class="create-page"]//input[@placeholder="Enter device ID"]'
+CSD_DEVICEMODELS = 'xpath://div[@class="create-page"]//div[contains(@class,"custom-radio-input")]'
+CSD_FACILITY = 'xpath://div[@class="create-page"]//div[contains(@class,"react-select__control")]//input'
+CSD_FACILITY_OPTIONS = 'xpath://div[contains(@class, "react-select__menu-list")]//div[contains(@class, "react-select__option") and @id]'
+CSD_CREATEBUTTON = 'xpath://div[@class="create-page"]//button[contains(@class, "create-btn")]'
+# Create multiple device
+CMD_FROMDEVICEID = 'xpath://div[@class="create-page"]//input[@name="fromDeviceId"]'
+CMD_TODEVICEID = 'xpath://div[@class="create-page"]//input[@name="toDeviceId"]'
+CMD_DEVICEMODELS = 'xpath://div[@class="create-page"]//div[contains(@class,"custom-radio-input")]'
+CMD_FACILITY = 'xpath://div[@class="create-page"]//div[contains(@class,"react-select__control")]//input'
+CMD_FACILITY_OPTIONS = 'xpath://div[contains(@class, "react-select__menu-list")]//div[contains(@class, "react-select__option") and @id]'
+CMD_CREATEBUTTON = 'xpath://div[@class="create-page"]//button[contains(@class, "create-btn")]'
+CMD_CONFIRM_YES = 'xpath://div[@class="confirmation-modal-container"]//button[contains(@class, "confirm-button")]'
+

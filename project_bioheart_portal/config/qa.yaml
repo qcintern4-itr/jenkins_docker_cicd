@@ -1,0 +1,6 @@
+WEB_BASE_URL: https://biosphere.delta.bioheart.bioflux.io
+USER:
+  - username: emailtest1@yopmail.com
+    password: 123456789
+  - username: emailtest2@yopmail.com
+    password: 123456789

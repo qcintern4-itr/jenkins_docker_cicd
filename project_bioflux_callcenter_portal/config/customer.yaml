@@ -1,0 +1,5 @@
+WEB_BASE_URL: https://erp.customer.biotricity.com/portal
+NEW_USERS:
+    sso_customer:
+        username: qc4@biotricity.com
+        password: Xow07129

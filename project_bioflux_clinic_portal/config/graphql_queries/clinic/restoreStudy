@@ -1,0 +1,6 @@
+mutation restoreStudy($studyId: ID!) {
+  restoreStudy(studyId: $studyId) {
+    isSuccess
+    message
+  }
+}

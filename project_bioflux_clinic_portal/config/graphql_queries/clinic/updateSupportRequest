@@ -1,0 +1,49 @@
+mutation updateSupportRequest($input: UpdateSupportRequestInput!) {
+  updateSupportRequest(input: $input) {
+    isSuccess
+    message
+    clinicTicket {
+      ... {
+        id
+        ticketId
+        requestedBy {
+          id
+          firstName
+          lastName
+        }
+        status
+        message
+        replyTo
+        resolution
+        category
+        issues
+        contents {
+          study {
+            id
+            friendlyId
+          }
+          studyType {
+            old
+            new
+          }
+          deviceId
+          deviceIssues
+        }
+        facility {
+          id
+          name
+        }
+        participants {
+          id
+          firstName
+          lastName
+        }
+        lastSeenTicketComment {
+          createdBy {
+            id
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+# Dashboard headers
+HEAD_DATA_ROOT = 'xpath://div[@class="dashboard-card-container"]/div'
+HEAD_HEADER = 'xpath:.//div[@class="dashboard-card-top-title-wrapper"]'
+HEAD_CONTENT_ROW = 'xpath:.//button[@class="dashboard-card-bottom-item"]'
+HEAD_CONTENT_TITLE = 'xpath:.//div[@class="dashboard-card-bottom-title"]'
+HEAD_CONTENT_VALUE = 'xpath:.//div[@class="dashboard-card-bottom-value"]'
+HEAD_VIEWACTIVESTUDIES = 'xpath://div[@class="create-button-container"]//button[1]'
+HEAD_SCHEDULENEWAPPT = 'xpath://div[@class="create-button-container"]//button[2]'
+# Dashboard upcoming events
+UPCOMINGEVENTS_DATA_ROOT = 'xpath://button[@class="dashboard-event-row"]'
+UPCOMINGEVENTS_DATA_BKTIME = 'xpath:.//div[@class="dashboard-event-row-info"]//div[@class="bold-text"]'
+UPCOMINGEVENTS_DATA_STATUS = 'xpath:.//div[@class="dashboard-event-row-info"]//div[contains(@class, "apt-status")]'
+UPCOMINGEVENTS_DATA_REASON = 'xpath:.//div[@class="dashboard-event-row-info"]//div[contains(@class, "info-tag-reason")]'
+UPCOMINGEVENTS_DATA_PATIENTNAME = 'xpath:.//div[@class="dashboard-event-row-name"]//button[contains(@class, "name-info-button")]'
+UPCOMINGEVENTS_DATA_CAREPLANID = 'xpath:.//div[@class="dashboard-event-row-name"]//div[@class="light-text"]'
+UPCOMINGEVENTS_GOTOCALENDAR = 'xpath://span[text()="Go to calendar"]/..'
+# Dashboard notification report
+NOTIF_HEADER = 'xpath:(//div[contains(@class, "dashboard-detail-card")])[3]//table//thead//th'
+NOTIF_CONTENT = 'xpath:(//div[contains(@class, "dashboard-detail-card")])[3]//table//tr[@data-row-key]//td'
+NOTIF_CONTENTS_ROW = 'xpath:(//div[contains(@class, "dashboard-detail-card")])[3]//table//tr[@data-row-key]'
+NOTIF_CONTENTS_PATIENTNAME = 'xpath:(//div[contains(@class, "dashboard-detail-card")])[3]//td/div[contains(@class, "text-color-blue")]'
+NOTIF_SEEMORE = 'xpath:(//div[contains(@class, "dashboard-detail-card")])[3]//button[contains(@class, "card-header-button")]'
+NOTIF_GOTONOTIF = 'xpath:(//div[contains(@class, "dashboard-detail-card")])[3]//div[@class="ant-empty-footer"]//button'
