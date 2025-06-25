@@ -6,27 +6,14 @@ pipeline {
     }
 
     environment {
-        jobName = "$JOB_BASE_NAME-$BUILD_NUMBER"
+        jobName = "${JOB_BASE_NAME}-${BUILD_NUMBER}"
         buildImage = "image:${jobName}"
-        repoUrl = "https://github.com/qcintern4-itr/jenkins_docker_cicd.git"
     }
 
     stages {
-        stage('Clone Repo') {
-            steps {
-                sh '''
-                    rm -rf jenkins_docker_cicd || true
-                    git clone ${repoUrl}
-                    cd jenkins_docker_cicd
-                    ls -la
-                '''
-            }
-        }
-
         stage('Building Container') {
             steps {
                 sh '''
-                    cd jenkins_docker_cicd
                     docker build -t ${buildImage} -f Dockerfile.test .
                     docker run -dit --name ${jobName} ${buildImage}
                 '''
