@@ -16,6 +16,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # Copy project code vào container
 COPY . /btcy-qa-tool-auto_fwk
 
+# Thêm tmp folder vào PATH để hệ thống tìm được chromedriver
+ENV PATH="/btcy-qa-tool-auto_fwk/tmp:${PATH}"
+
 # Cấp quyền
 RUN chmod -R 777 /btcy-qa-tool-auto_fwk
 
