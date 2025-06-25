@@ -14,18 +14,12 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Copy project code vào container
-COPY . /btcy-qa-tool-auto_fwk
-
-# Thêm tmp folder vào PATH để hệ thống tìm được chromedriver
-ENV PATH="/btcy-qa-tool-auto_fwk/tmp:${PATH}"
-
-# Cấp quyền thực thi cho chromedriver
-RUN chmod +x /btcy-qa-tool-auto_fwk/tmp/chromedriver
+COPY . /jenkins_docker_cicd
 
 # Cấp quyền
-RUN chmod -R 777 /btcy-qa-tool-auto_fwk
+RUN chmod -R 777 /jenkins_docker_cicd
 
-WORKDIR /btcy-qa-tool-auto_fwk
+WORKDIR /jenkins_docker_cicd
 
 # Cài thư viện Python
 RUN pip3 install --no-cache-dir -r requirements_raw.txt

@@ -44,7 +44,7 @@ pipeline {
         stage('Publishing Report') {
             steps {
                 sh '''
-                    docker cp ${jobName}:/btcy-qa-tool-auto_fwk/results $WORKSPACE
+                    docker cp ${jobName}:/jenkins_docker_cicd/results $WORKSPACE
                     rm -rf public_results
                     mkdir public_results
                     log=$(ls -ltr results/ | tail -n 1 | awk '{print $9}')
