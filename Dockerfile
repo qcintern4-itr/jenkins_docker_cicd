@@ -5,4 +5,4 @@ COPY . /btcy-qa-tool-auto_fwk
 HEALTHCHECK --interval=15s --timeout=5s --start-period=5s --retries=3 CMD [ "starting" ]
 RUN chmod -R 777 /btcy-qa-tool-auto_fwk
 WORKDIR /btcy-qa-tool-auto_fwk
-RUN python3 -m pip install -r ./requirements_raw
+RUN python3 -m pip install -r ./requirements_raw.txt
