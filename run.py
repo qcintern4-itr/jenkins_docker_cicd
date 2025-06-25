@@ -177,8 +177,8 @@ class Run:
 
 
 if __name__ == '__main__':
-    if os.path.basename(os.getcwd()) != 'btcy-qa-tool-auto_fwk':
-        raise Exception('Script is executed at `btcy-qa-tool-auto_fwk` directory ONLY.')
+    if os.path.basename(os.getcwd()) != 'jenkins_docker_cicd':
+        raise Exception('Script is executed at `jenkins_docker_cicd` directory ONLY.')
 
     parser = argparse.ArgumentParser(description='Biotricity Automation Framework execution.\n')
 
