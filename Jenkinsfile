@@ -34,11 +34,11 @@ pipeline {
                 script {
                     if (isUnix()) {
                         sh """
-                            docker exec $jobName bash -c "export USERNAME=auto-bot; python3 demo_jenkins.py"
+                            docker exec $jobName bash -c 'export USERNAME=auto-bot && python3 demo_jenkins.py'
                         """
                     } else {
                         bat """
-                            docker exec %jobName% cmd /c "set USERNAME=auto-bot && python demo_jenkins.py"
+                            docker exec %jobName% bash -c "export USERNAME=auto-bot && python demo_jenkins.py"
                         """
                     }
                 }
