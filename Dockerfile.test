@@ -23,10 +23,11 @@ COPY . /jenkins_docker_cicd
 # Grant permissions
 RUN chmod -R 777 /jenkins_docker_cicd
 
+#Set working directory for the project
 WORKDIR /jenkins_docker_cicd
 
 # Install Python libraries
 RUN pip3 install --no-cache-dir -r requirements_raw.txt
 
-# Healthcheck đơn giản
+# Healthcheck
 HEALTHCHECK --interval=15s --timeout=5s --start-period=5s --retries=3 CMD ["echo", "healthy"]

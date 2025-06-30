@@ -1,25 +1,15 @@
-
 FROM jenkins/jenkins:lts
 
 USER root
 
-# Install the Docker client inside the Jenkins container so Jenkins can interact with the Docker host
-RUN apt-get update && apt-get install -y \
-    docker.io \
-    lsb-release \
-    curl \
-    gnupg2 \
-    unzip \
-    && apt-get clean
+# Install Docker client and required tools
+RUN apt-get update && \
+    apt-get install -y docker.io lsb-release curl gnupg2 unzip && \
+    apt-get clean && rm -rf /var/lib/apt/lists/*
 
-# Add the jenkins user to the docker group to grant permission to run Docker
-RUN groupadd -f docker && usermod -aG docker jenkins
+# Create a directory for mounting the source code (if needed)
+#RUN mkdir -p /jenkins_docker_cicd /var/jenkins_home
 
-# Create a directory to mount the source code if needed
-RUN mkdir -p /jenkins_docker_cicd && chmod -R 777 /jenkins_docker_cicd
-
-# Install plugins from plugin_jenkins.txt
+# Copy the plugin list into the container and install them
 COPY plugin_jenkins.txt /usr/share/jenkins/ref/plugins.txt
 RUN jenkins-plugin-cli --plugin-file /usr/share/jenkins/ref/plugins.txt
-
-USER jenkins
