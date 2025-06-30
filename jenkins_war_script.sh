@@ -44,23 +44,25 @@ else
     create-job "$JOB_NAME" < "$JOB_CONFIG"
 fi
 
-# Get next build number
-BUILD_NUMBER=$(java -jar "$JENKINS_CLI" -s "$JENKINS_URL" -http \
-  -auth "$ADMIN_USER:$ADMIN_TOKEN" \
-  get-job "$JOB_NAME" | grep '<nextBuildNumber>' | sed -E 's/.*<nextBuildNumber>([0-9]+)<\/nextBuildNumber>.*/\1/')
+echo "⚙️ Triggering build for job '$JOB_NAME'..."
 
-echo "🚧 Triggering build #$BUILD_NUMBER for job '$JOB_NAME'..."
+# Trigger build and wait for it to finish
 java -jar "$JENKINS_CLI" -s "$JENKINS_URL" -http \
   -auth "$ADMIN_USER:$ADMIN_TOKEN" \
   build "$JOB_NAME" -s -v
 
-# Get build result
-echo "⏳ Waiting for build result..."
+# Get last build number from job XML
+LAST_BUILD=$(java -jar "$JENKINS_CLI" -s "$JENKINS_URL" -http \
+  -auth "$ADMIN_USER:$ADMIN_TOKEN" \
+  get-job "$JOB_NAME" | grep -oPm1 "(?<=<lastBuild><number>)[^<]+")
+
+echo "⏳ Waiting for build #$LAST_BUILD console output..."
+
+# Get result from console output
 RESULT=$(java -jar "$JENKINS_CLI" -s "$JENKINS_URL" -http \
   -auth "$ADMIN_USER:$ADMIN_TOKEN" \
-  console "$JOB_NAME" "$BUILD_NUMBER" | grep -E "Finished: (SUCCESS|FAILURE|ABORTED)" | tail -1)
+  console "$JOB_NAME" "$LAST_BUILD" | grep -E "Finished: (SUCCESS|FAILURE|ABORTED)" | tail -1)
 
 echo "✅ Build result: $RESULT"
 
-# (Optional) Stop Jenkins
-# kill $JENKINS_PID
+
