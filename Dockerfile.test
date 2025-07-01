@@ -17,17 +17,20 @@ RUN wget -qO - https://dl.google.com/linux/linux_signing_key.pub | apt-key add -
     echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google-chrome.list && \
     apt-get update && apt-get install -y google-chrome-stable
 
+# Copy only requirements first to leverage Docker cache
+COPY requirements_raw.txt /tmp/
+
+# Install Python libraries first (cached unless file changes)
+RUN pip3 install --no-cache-dir -r /tmp/requirements_raw.txt
+
 # Copy project code into the container
 COPY . /jenkins_docker_cicd
 
-# Grant permissions
+# Grant permissions (read/write/execute)
 RUN chmod -R 777 /jenkins_docker_cicd
 
-#Set working directory for the project
+# Set the working directory inside the container where the Python scripts will run
 WORKDIR /jenkins_docker_cicd
-
-# Install Python libraries
-RUN pip3 install --no-cache-dir -r requirements_raw.txt
 
 # Healthcheck
 HEALTHCHECK --interval=15s --timeout=5s --start-period=5s --retries=3 CMD ["echo", "healthy"]
